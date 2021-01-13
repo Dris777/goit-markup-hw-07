@@ -18,16 +18,12 @@ header {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
-}
-.logo-a-list-link:hover,
-.logo-a-list-link:focus {
-  color: var(--dedicated-text-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.logo-a:hover,
-.logo-a:focus {
-  color: var(--dedicated-text-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--dedicated-text-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .logo-a {
   font-family: var(--second-font);
@@ -38,6 +34,12 @@ header {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-right: 93px;
+
+  &:hover,
+  &:focus {
+    color: var(--dedicated-text-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .logo-a-list {
   font-style: normal;
@@ -56,16 +58,17 @@ header {
 }
 .header-contact-tel {
   color: var(--primary-text-color);
-}
-.header-contact-tel:hover,
-.header-contact-tel:focus {
-  color: var(--dedicated-text-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-contact-tel:hover .header-contact-tel-svg,
-.header-contact-tel:focus .header-contact-tel-svg {
-  fill: var(--dedicated-text-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--dedicated-text-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover &-svg,
+  &:focus &-svg {
+    fill: var(--dedicated-text-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .header-contact {
   margin-left: auto;
@@ -85,6 +88,17 @@ header {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    color: var(--dedicated-text-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover .header-contact-svg,
+  &:focus .header-contact-svg {
+    fill: var(--dedicated-text-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .header-contact-svg {
   width: 16px;
